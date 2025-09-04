@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #faf4d3;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('https://wallpapers.com/images/hd/abstract-triangular-forest-pattern-jpg-4qskc4p7p1i4hs28.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+    z-index: -1; 
+}
+
+
+h1{
+    display: flex;
+    font-size: 3.3rem;
+    justify-content: center;
+    padding: .5rem;
+    margin-top: 0;
+    background-color: #004643;
+    text-transform: uppercase;
+    height: 5rem;
+}
+
+.clock{
+    border:3px solid #8d99ae;
+    margin: 9%;
+    padding: 3rem;
+    font-size: 3.4rem;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    .clock{
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+}
